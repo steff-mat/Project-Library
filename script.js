@@ -98,7 +98,8 @@ function updateDisplay() {
       toggleReadColor();
 
       bookDelete.addEventListener('click', () => {
-        // bookBodyDiv.parentNode.removeChild(bookBodyDiv);
+        bookBodyDiv.parentNode.removeChild(bookBodyDiv);
+        myLibrary.splice(myLibrary.indexOf(x), 1);
       });
 
       readStatus.addEventListener('click', () => {
