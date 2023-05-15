@@ -48,6 +48,14 @@ input {
   text-align: center;
 }
 
+input:invalid {
+  border: 2px dotted red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
 .read-confirmation input {
   margin-left: 5px;
 }
